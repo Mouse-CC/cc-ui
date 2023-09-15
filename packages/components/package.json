@@ -1,0 +1,14 @@
+{
+  "name": "@cc-ui/components",
+  "version": "0.0.0",
+  "description": "ui-library",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "mouse-cc",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@cc-ui/utils",
+  "main": "index.ts",
+  "private": true,
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}

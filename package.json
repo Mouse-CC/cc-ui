@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "play"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "@cc-ui/components": "workspace:*",
+    "@cc-ui/constants": "workspace:*",
+    "@cc-ui/eslint-config": "workspace:*",
+    "@cc-ui/theme-chalk": "workspace:*",
+    "@cc-ui/utils": "workspace:*",
+    "@vueuse/core": "^9.5.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lodash-unified": "^1.0.3"
+  },
+  "devDependencies": {
+    "@cc-ui/hooks": "workspace:*",
+    "@types/node": "*",
+    "@vuepress/client": "2.0.0-beta.51",
+    "cc-ui": "workspace:*",
+    "eslint": "^8.47.0",
+    "eslint-define-config": "^1.23.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "typescript": "^5.1.6",
+    "unplugin-vue-define-options": "^0.10.0",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.8",
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-plugin-demoblock-plus": "^2.0.4"
+  },
+  "engines": {
+    "node": ">= 16"
+  }
+}
