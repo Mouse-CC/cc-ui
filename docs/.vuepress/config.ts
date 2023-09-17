@@ -6,7 +6,7 @@ import sidebar from './configs/sidebar'
 export default {
   lang: 'zh-CN',
   title: '组件库',
-  descroption: '基于 Vue3 的 UI 组件库',
+  descroption: '基于 Vue3 + Element 的 UI 组件库',
   theme: defaultTheme({
     navbar,
     sidebar,

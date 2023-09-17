@@ -20,7 +20,7 @@ export default defineComponent({
       type: String,
     },
   },
-  setup(props, { expose, slots }) {
+  setup(props, { slots }) {
     provide('CcRow', props.gutter) // 为子组件提供
     const ns = useNamespace('row')
     const cl = computed(() => [
@@ -40,7 +40,8 @@ export default defineComponent({
       }
     })
 
+    // slot -> 放入任意
     return () =>
-      h(props.tag, { class: cl.value, style: st.value }, slots.default?.()) // 暴露默认插槽
+      h(props.tag, { class: cl.value, style: st.value }, slots.default?.())
   },
 })

@@ -22,6 +22,10 @@ function getComponentsSidebar() {
           text: 'Icon',
           link: '/components/icon.md',
         },
+        {
+          text: 'Layout',
+          link: '/components/layout.md',
+        },
       ],
     },
   ]

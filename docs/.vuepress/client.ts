@@ -4,6 +4,7 @@ import CcButton from '../../packages/components/button'
 import CcButtonGroup from '../../packages/components/button-group'
 import CcIcon from '../../packages/components/icon'
 import CcRow from '../../packages/components/row'
+import CcCol from '../../packages/components/col'
 import '@cc-ui/theme-chalk/src/index.scss'
 
 export default defineClientConfig({
@@ -13,5 +14,6 @@ export default defineClientConfig({
     app.component('CcButtonGroup', CcButtonGroup)
     app.component('CcIcon', CcIcon)
     app.component('CcRow', CcRow)
+    app.component('CcCol', CcCol)
   },
 })

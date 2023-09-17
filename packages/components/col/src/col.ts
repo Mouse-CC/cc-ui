@@ -54,6 +54,6 @@ export default defineComponent({
     })
 
     return () =>
-      h(props.tag, { class: cl.value, style: st.value }, slots.default?.()) // 暴露默认插槽
+      h(props.tag, { class: cl.value, style: st.value }, slots.default?.())
   },
 })

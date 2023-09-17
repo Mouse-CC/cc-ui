@@ -74,8 +74,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { CcMessage } from 'cc-ui'
-// import Message from '../../packages/components/message'
+import { CcMessage, CcButton } from 'cc-ui'
 
 interface Option {
   key: number
@@ -104,13 +103,10 @@ const cbxs = ref(['option 5', 'option 6'])
 
 const btnClick = (e: MouseEvent) => {
   CcMessage({
-    message: 'news',
+    dangerouslyUseHTMLString: true,
+    message: '<strong>This is <i>HTML</i> string</strong>',
   })
-  // Message({
-  //   message: 'hello',
-  //   type: 'success',
-  // })
-  // console.log(e)
+  console.log(e)
 }
 
 const handleChange = (val: boolean) => {
