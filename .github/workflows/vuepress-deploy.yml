@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: vuepress-deploy
-        uses: Mouse-CC/vuepress-deploy@gh-pages
+      - name: cc-ui
+        uses: Mouse-CC/cc-ui@main
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: Mouse-CC/cc-ui
