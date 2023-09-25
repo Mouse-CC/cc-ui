@@ -8,7 +8,7 @@ export default {
   title: 'cc-ui',
   head: [['link', { rel: 'icon', type: 'ico', href: '/images/favicon.ico' }]],
   descroption: '基于 Vue3 + Element 的 UI 组件库',
-  base: '/',
+  base: '/cc-ui',
   markdown: {
     code: {
       lineNumbers: false,

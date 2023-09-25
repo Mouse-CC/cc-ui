@@ -12,7 +12,19 @@ const install = (app: App) => {
   })
 }
 
-export * from '@cc-ui/components'
+export {
+  CcButton,
+  CcButtonGroup,
+  CcTitle,
+  CcIcon,
+  CcCol,
+  CcRow,
+  CcInput,
+  CcCheckboxGroup,
+  CcCheckbox,
+  CcTransfer,
+  CcMessage,
+} from '@cc-ui/components'
 export * from '@cc-ui/constants'
 export * from '@cc-ui/hooks'
 

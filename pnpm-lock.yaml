@@ -58,8 +58,8 @@ importers:
         specifier: ^1.23.0
         version: 1.23.0
       mouse-cc-ui:
-        specifier: workspace:*
-        version: link:packages/cc-ui
+        specifier: 1.0.6-alpha
+        version: 1.0.6-alpha(@types/lodash-es@4.17.9)(vue@3.3.4)
       prettier:
         specifier: ^2.7.1
         version: 2.7.1
@@ -910,11 +910,9 @@ packages:
     resolution: {integrity: sha512-ZTcmhiI3NNU7dEvWLZJkzG6ao49zOIjEgIE0RgV7wbPxU0f2xT3VSAHw2gmst8swH6V0YkLRGp4qPlX/6I90MQ==}
     dependencies:
       '@types/lodash': 4.14.198
-    dev: false
 
   /@types/lodash@4.14.198:
     resolution: {integrity: sha512-trNJ/vtMZYMLhfN45uLq4ShQSw0/S7xCTLLVM+WM1rmFpba/VS42jVUgaO3w/NOLiWR/09lnYk0yMaA/atdIsg==}
-    dev: false
 
   /@types/markdown-it-emoji@2.0.2:
     resolution: {integrity: sha512-2ln8Wjbcj/0oRi/6VnuMeWEHHuK8uapFttvcLmDIe1GKCsFBLOLBX+D+xhDa9oWOQV0IpvxwrSfKKssAqqroog==}
@@ -3806,7 +3804,6 @@ packages:
 
   /lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: false
 
   /lodash-unified@1.0.3(@types/lodash-es@4.17.9)(lodash-es@4.17.21)(lodash@4.17.21):
     resolution: {integrity: sha512-WK9qSozxXOD7ZJQlpSqOT+om2ZfcT4yO+03FuzAHD0wF6S0l0090LRPDx3vhTTLZ8cFKpBn+IOcVXK6qOcIlfQ==}
@@ -3818,7 +3815,6 @@ packages:
       '@types/lodash-es': 4.17.9
       lodash: 4.17.21
       lodash-es: 4.17.21
-    dev: false
 
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
@@ -3837,7 +3833,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
 
   /log-symbols@5.1.0:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}
@@ -3997,6 +3992,19 @@ packages:
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: false
+
+  /mouse-cc-ui@1.0.6-alpha(@types/lodash-es@4.17.9)(vue@3.3.4):
+    resolution: {integrity: sha512-XSzp1HzL08DUsQC7I0GCnMLV46pg1gD6R5DYoejxnQeyIbUE5NWwptxlJFSsSxAsPKYXmYI2XAW4whhILa5uZw==}
+    dependencies:
+      '@vueuse/core': 9.5.0(vue@3.3.4)
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.9)(lodash-es@4.17.21)(lodash@4.17.21)
+    transitivePeerDependencies:
+      - '@types/lodash-es'
+      - '@vue/composition-api'
+      - vue
+    dev: true
 
   /ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}

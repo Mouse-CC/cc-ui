@@ -1,0 +1,11 @@
+import{V as _}from"./vue.runtime.esm-bundler.0ee1be25.js";import{_ as y,r as u,o as f,c as F,a as m,w as l,b as e,d as t}from"./app.745e07d3.js";const h={name:"component-doc",components:{"render-demo-0":function(){const{toDisplayString:s,createTextVNode:n,resolveComponent:c,withCtx:a,openBlock:r,createBlock:p}=_;function o(C,B){const d=c("cc-title");return r(),p(d,{style:{display:"inline-block","margin-bottom":"0"}},{default:a(()=>[n(s("title"))]),_:1})}return{render:o,...{}}}()}},k=e("div",null,[t("\u4F7F\u7528 "),e("code",null,"enterStyle"),t(" \u5C5E\u6027\u6765\u5B9A\u4E49 Title \u7684\u6837\u5F0F\uFF0C\u4F20\u5165\u7684\u7C7B\u578B\u4E3A string\u3002")],-1),x=e("div",{class:"language-vue"},[e("pre",{class:"shiki",style:{"background-color":"#ffffff"}},[e("code",null,[e("span",{class:"line"},[e("span",{style:{color:"#24292F"}},"<"),e("span",{style:{color:"#116329"}},"template"),e("span",{style:{color:"#24292F"}},">")]),t(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#24292F"}},"  <"),e("span",{style:{color:"#116329"}},"cc-title"),e("span",{style:{color:"#24292F"}}," "),e("span",{style:{color:"#0550AE"}},"style"),e("span",{style:{color:"#24292F"}},"="),e("span",{style:{color:"#0A3069"}},'"display: inline-block; margin-bottom: 0"'),e("span",{style:{color:"#24292F"}},">{{")]),t(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#24292F"}},"    "),e("span",{style:{color:"#0A3069"}},"'title'")]),t(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#24292F"}},"  }}</"),e("span",{style:{color:"#116329"}},"cc-title"),e("span",{style:{color:"#24292F"}},">")]),t(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#24292F"}},"</"),e("span",{style:{color:"#116329"}},"template"),e("span",{style:{color:"#24292F"}},">")]),t(`
+`),e("span",{class:"line"})])])],-1);function g(s,n,c,a,r,p){const o=u("render-demo-0"),i=u("demo");return f(),F("div",null,[m(i,{customClass:"demoblock-custom",sourceCode:`<template>
+  <cc-title style="display: inline-block; margin-bottom: 0">{{
+    'title'
+  }}</cc-title>
+</template>
+`},{description:l(()=>[k]),highlight:l(()=>[x]),default:l(()=>[m(o)]),_:1})])}const E=y(h,[["render",g],["__file","title.html.vue"]]);export{E as default};
