@@ -1,8 +1,9 @@
-import { createVNode, render } from 'vue'
+import { createVNode, isVNode, render } from 'vue'
+import { isFunction } from '@cc-ui/utils'
 import messageComponent from './message.vue'
 import { instances } from './instance'
 import type { MessageContext } from './instance'
-import type { MessageHandler, MessageOption, MessageProps } from './message'
+import type { MessageHandler, MessageOption } from './message'
 
 let seed = 1
 
@@ -44,7 +45,17 @@ const createMessage = (
   }
 
   // 节点
-  const vnode = createVNode(messageComponent, props as MessageProps)
+  const vnode = createVNode(
+    messageComponent,
+    props,
+    isFunction(props.message) || isVNode(props.message)
+      ? {
+          default: isFunction(props.message)
+            ? props.message
+            : () => props.message,
+        }
+      : null
+  )
 
   // 渲染
   // render(vnode, container)

@@ -1,4 +1,5 @@
 export * from './types'
 export * from './vue'
 export * from './objects'
+export * from './functions'
 export * from './typescript'

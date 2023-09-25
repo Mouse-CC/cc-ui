@@ -1,32 +1,24 @@
----
-title: 安装
----
+# `cc-ui`
+
+> TODO: description
 
 ## cc-ui 简介
 
 cc-ui 是基于 Vue3 + ElementPlus 二次开发的组合组件库集合，目前包含了 button、icon、checkbox、layout、input 等组件，后续还在补充中，敬请期待...
 本组件库支持按需引入
 
-## 用法
-
 ### 安装
 
 ```
-npm install cc-ui
+npm install mouse-cc-ui
 ```
 
-### 手动按需引入
+## 用法
 
 ```
-<template>
-  <cc-button type="primary" icon="edit" @click="handleClick" />
-</template>
+import ccui from 'mouse-cc-ui'
 
-<script lang="ts" setup>
+import 'mouse-cc-ui/lib/index.css' // css 样式
 
-onst btnClick = (e: MouseEvent) => {
-  // event
-}
-
-</script>
+use(ccui)
 ```

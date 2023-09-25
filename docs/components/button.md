@@ -37,12 +37,6 @@ title: Button 按钮
     <cc-button type="danger" icon="delete" circle />
   </cc-row>
 </template>
-
-<style scope lang="scss">
-.mb-4 {
-  margin-bottom: 12px;
-}
-</style>
 ```
 
 :::
@@ -111,12 +105,6 @@ title: Button 按钮
     <cc-button type="primary" icon="search" />
   </cc-button-group>
 </template>
-
-<style scope lang="scss">
-.ml-4 {
-  margin-left: 12px;
-}
-</style>
 ```
 
 :::
@@ -155,12 +143,6 @@ title: Button 按钮
     <cc-button size="small" circle icon="search" />
   </cc-row>
 </template>
-
-<style scope lang="scss">
-.mb-4 {
-  margin-bottom: 12px;
-}
-</style>
 ```
 
 :::

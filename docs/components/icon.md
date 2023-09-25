@@ -1,5 +1,5 @@
 ---
-title: 图标
+title: Icon 图标
 ---
 
 ### Icon 图标
@@ -835,41 +835,6 @@ title: 图标
     </li>
   </ul>
 </template>
-
-<style scoped lang="scss">
-.demo-icon-list {
-  border-top: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
-  border-radius: 4px;
-  padding: 0 !important;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  list-style: none;
-  overflow: hidden;
-  .icon-item {
-    height: 90px;
-    color: #666666;
-    font-size: 16px;
-    border-bottom: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    text-align: center;
-    .item {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      .icon {
-        font-size: 1.5rem;
-      }
-      span {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-</style>
 ```
 
 :::

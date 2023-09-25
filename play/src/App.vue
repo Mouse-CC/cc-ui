@@ -74,7 +74,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { CcMessage, CcButton } from 'cc-ui'
+import { CcMessage } from '../../packages/cc-ui/lib/index'
 
 interface Option {
   key: number

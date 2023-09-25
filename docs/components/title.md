@@ -10,12 +10,6 @@ title: 标题
     'title'
   }}</cc-title>
 </template>
-
-<style scoped lang="scss">
-h1 {
-  color: red !important;
-}
-</style>
 ```
 
 :::

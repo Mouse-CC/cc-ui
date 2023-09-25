@@ -1,12 +1,7 @@
 export default {
-  // '/api/': getAPISidebar(),
   '/components': getComponentsSidebar(),
   '/guide': getGuideSidebar(),
 }
-
-// function getAPISidebar() {
-//     return [{ text: 'API参考', link: '/api/index.md' }]
-// }
 
 function getComponentsSidebar() {
   return [
@@ -15,16 +10,32 @@ function getComponentsSidebar() {
       text: '组件',
       children: [
         {
-          text: 'Button',
+          text: 'Button 按钮',
           link: '/components/button.md',
         },
         {
-          text: 'Icon',
+          text: 'Icon 图标',
           link: '/components/icon.md',
         },
         {
-          text: 'Layout',
+          text: 'Layout 布局',
           link: '/components/layout.md',
+        },
+        {
+          text: 'Checkout 多选框',
+          link: '/components/checkbox.md',
+        },
+        {
+          text: 'Input 输入框',
+          link: '/components/input.md',
+        },
+        {
+          text: 'Transfer 穿梭框',
+          link: '/components/transfer.md',
+        },
+        {
+          text: 'Message 消息提示',
+          link: '/components/message.md',
         },
       ],
     },
@@ -41,7 +52,36 @@ function getGuideSidebar() {
     {
       isGroup: true,
       text: '教程',
-      children: [{ text: '按钮', link: '/components/button.md' }],
+      children: [
+        {
+          text: '按钮',
+          link: '/components/button.md',
+        },
+        {
+          text: '图标',
+          link: '/components/icon.md',
+        },
+        {
+          text: '布局',
+          link: '/components/layout.md',
+        },
+        {
+          text: '多选框',
+          link: '/components/checkout.md',
+        },
+        {
+          text: 'Input 输入框',
+          link: '/components/input.md',
+        },
+        {
+          text: 'Transfer 穿梭框',
+          link: '/components/transfer.md',
+        },
+        {
+          text: 'Message 消息提示',
+          link: '/components/message.md',
+        },
+      ],
     },
   ]
 }

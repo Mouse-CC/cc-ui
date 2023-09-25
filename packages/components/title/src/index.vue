@@ -1,12 +1,10 @@
 <template>
   <h1 :style="style">
-    <span>
-      <slot name="icon" />
-    </span>
+    <i v-if="icon" :class="`cc-icon-${icon}`" />
     <slot> {{ msg }}</slot>
   </h1>
 </template>
-<script lang="ts"></script>
+
 <script setup lang="ts">
 import type { StyleValue } from 'vue'
 
@@ -16,21 +14,21 @@ defineOptions({
 
 defineProps<{
   msg?: string
+  icon?: string
   style?: StyleValue
 }>()
 </script>
+
 <style scoped lang="scss">
 h1 {
   color: #00a0ff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
-  > span {
-    display: flex;
-    margin-right: 5px;
-    align-items: center;
+  > i {
+    margin-right: 10px;
   }
 }
 </style>

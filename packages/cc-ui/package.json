@@ -1,12 +1,24 @@
 {
-  "name": "cc-ui",
-  "version": "0.0.0",
-  "description": "ui",
-  "main": "index.ts",
+  "type": "module",
+  "name": "mouse-cc-ui",
+  "version": "1.0.2-alpha",
+  "description": "ui library for vue",
+  "license": "MIT",
+  "main": "./lib/index.js",
   "scripts": {},
   "keywords": [
     "ui",
+    "vue",
     "component library"
   ],
-  "author": "mouse-cc"
+  "dependencies": {
+    "@vueuse/core": "^9.5.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lodash-unified": "^1.0.3"
+  },
+  "author": "mouse-cc",
+  "browserslist": [
+    "> 1%"
+  ]
 }

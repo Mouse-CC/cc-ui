@@ -1,6 +1,7 @@
 import components from './component'
 import plugin from './plugin'
 import type { App } from 'vue'
+import '@cc-ui/theme-chalk/src/index.scss'
 
 const install = (app: App) => {
   components.forEach((c) => {
