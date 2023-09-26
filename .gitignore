@@ -1,5 +1,7 @@
 node_modules
+dist
 pnpm-lock.yaml
+deploy.sh
 .temp
 .cache
 .DS_Store

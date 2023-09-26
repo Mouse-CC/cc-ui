@@ -6,18 +6,18 @@ import sidebar from './configs/sidebar'
 export default {
   lang: 'zh-CN',
   title: 'cc-ui',
-  head: [['link', { rel: 'icon', type: 'ico', href: '/images/favicon.ico' }]],
   descroption: '基于 Vue3 + Element 的 UI 组件库',
-  base: '/cc-ui',
-  markdown: {
-    code: {
-      lineNumbers: false,
-    },
-  },
+  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
+  base: '/cc-ui/',
+  port: 3000,
   theme: defaultTheme({
-    logo: '/images/vue_logo.svg',
+    repo: 'Mouse-CC/cc-ui',
+    logo: '/vue_logo.svg',
+
     navbar,
+
     sidebar,
+
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdatedText: '上次更新',
     contributorsText: '贡献者',
