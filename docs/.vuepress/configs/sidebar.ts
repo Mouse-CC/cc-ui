@@ -54,20 +54,20 @@ function getGuideSidebar() {
       text: '教程',
       children: [
         {
-          text: '按钮',
+          text: 'Button 按钮',
           link: '/components/button.md',
         },
         {
-          text: '图标',
+          text: 'Icon 图标',
           link: '/components/icon.md',
         },
         {
-          text: '布局',
+          text: 'Layout 布局',
           link: '/components/layout.md',
         },
         {
-          text: '多选框',
-          link: '/components/checkout.md',
+          text: 'Checkbox 多选框',
+          link: '/components/checkbox.md',
         },
         {
           text: 'Input 输入框',
