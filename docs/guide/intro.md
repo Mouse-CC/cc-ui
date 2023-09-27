@@ -12,7 +12,7 @@ cc-ui 是基于 Vue3 + ElementPlus 二次开发的组合组件库集合，目前
 ### 安装
 
 ```
-npm install cc-ui
+npm install mouse-cc-ui
 ```
 
 ### 手动按需引入
@@ -23,6 +23,7 @@ npm install cc-ui
 </template>
 
 <script lang="ts" setup>
+import { CcButton } from 'mouse-cc-ui'
 
 onst btnClick = (e: MouseEvent) => {
   // event

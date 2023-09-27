@@ -1,15 +1,25 @@
+import path from 'path'
 import { defaultTheme } from 'vuepress'
 import { demoblockPlugin } from 'vuepress-plugin-demoblock-plus'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { getDirname } from '@vuepress/utils'
 import navbar from './configs/navbar'
 import sidebar from './configs/sidebar'
+
+const __dirname = getDirname(import.meta.url)
 
 export default {
   lang: 'zh-CN',
   title: 'cc-ui',
   descroption: '基于 Vue3 + Element 的 UI 组件库',
-  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/vue.ico' }]],
   base: '/cc-ui/',
   port: 3000,
+  markdown: {
+    code: {
+      lineNumbers: false,
+    },
+  },
   theme: defaultTheme({
     repo: 'Mouse-CC/cc-ui',
     logo: '/vue_logo.svg',
@@ -23,11 +33,12 @@ export default {
     contributorsText: '贡献者',
   }),
   plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
     demoblockPlugin({
-      customClass: 'demoblock-custom',
-      theme: 'github-light',
+      // theme: 'github-light',
       cssPreprocessor: 'scss',
-      customStyleTagName: 'style lang="scss"',
       scriptImports: ["import * as CcUi from 'mouse-cc-ui'"],
       scriptReplaces: [
         {
