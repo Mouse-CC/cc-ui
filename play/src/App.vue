@@ -43,6 +43,10 @@
       <cc-input v-model="state" placeholder="stardust" disabled />
     </div>
 
+    <div class="w-240">
+      <cc-input v-model="state1" placeholder="stardust" />
+    </div>
+
     <div>
       <cc-checkbox
         v-model="cbx"
@@ -74,7 +78,8 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { CcMessage } from '../../packages/cc-ui/lib/index'
+import { CcMessage } from 'mouse-cc-ui'
+import { CcInput } from '@cc-ui/components'
 
 interface Option {
   key: number
@@ -98,6 +103,7 @@ const data = ref<Option[]>(generateData())
 const value = ref([1, 4])
 
 const state = ref('Stardust')
+const state1 = ref('')
 const cbx = ref(false)
 const cbxs = ref(['option 5', 'option 6'])
 
@@ -109,7 +115,7 @@ const btnClick = (e: MouseEvent) => {
   console.log(e)
 }
 
-const handleChange = (val: boolean) => {
+const handleChange = (val: any) => {
   console.log(val)
 }
 

@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import ccui from '../../packages/cc-ui/lib/index'
-import '../../packages/cc-ui/lib/index.css'
+import ccui from 'mouse-cc-ui'
+import '@cc-ui/theme-chalk/src/index.scss'
 
 createApp(App).use(ccui).mount('#app')
